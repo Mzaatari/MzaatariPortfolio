@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mohamad Elzaatari</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mohamad Elzaatari</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#games" onclick="toggleMenu()">Games</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/me.jpeg" alt="Mzaatari profile pic" class="circular-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title">Mohamad Elzaatari</h1>
+            <p class="section__text__p2">Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/MohamadZaatariCV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My linked in profile" class="icon" onclick="location.href='https://www.linkedin.com/in/mohamad-elzaatari-42245923b/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/MohZaatari'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Me2.jpg" alt="profile pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Vast & Diversified <br>Projects</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelors Degree <br>Software Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a software engineer with a Bachelors degree in Software Engineering and a certificate in Practical Aspects of Computer Security (PACS). Over the years, I have developed a vast and diversified portfolio of projects, ranging from 2D and 3D games in Unity and Unreal Engine to fully functional websites and custom programs such as a password manager and storage system, among others. My experience covers the software development lifecycle, including design, implementation, testing, integration, and some deployment, allowing me to deliver working solutions. I look forward to deepening my knowledge and skillsets throughout my professional career.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next section arrow" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Overview Of My</p>
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/checkmark.png" alt="experience" class="icon">
+                        <h3>Mercedes</h3>
+                        <p>Software Engineer <br>Intern</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/checkmark.png" alt="experience" class="icon">
+                        <h3>University of Michigan</h3>
+                        <p>Diversified Projects</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Software Engineering major, graduated in 2024, with a vast project portfolio. Strong technical and analytical skills in
+programming, honed through extensive university coursework and practical experience.<br></p>
+                    <br>
+                    <h3 class="center-txt">Relevant Courses:</h3>
+                    <p class="center-txt">• Engineering Probability and Statistics <br>• Data Structures & Algorithm Analysis for Software Engineers <br>• Discrete
+Structures I, II <br>• Software Engineering Tools <br>• Software Engineering I, II <br>• Computer Networks and Distributed
+Processing <br>• Operating Systems <br>• Software Architecture and Design Patterns <br>• Game design I, II.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next section arrow" class="icon arrow" onclick="location.href='#games'">
+    </section>
+     <section id="games">
+        <p class="section__text__p1">Some Of My</p>
+        <h1 class="title">Games</h1>
+        <p class="section__text__p1"><i>Please contact me for certain game files (over 100MB)</i></p>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/gameLogo.jpg" alt="game" class="icon">
+                        <h3>Shoot Or Step</h3>
+                        <p>Chess Like Shooter <br>2D Unity</p>
+                        <div class="btn-container">
+                            <button class="btn-top-padding btn btn-color-3" onclick="downloadGame('./assets/ShootOrStep.zip')">Download Game</button>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/gameLogo.jpg" alt="game" class="icon">
+                        <h3>ChronoGuard</h3>
+                        <p>Tower Defense <br>3D Unity</p>
+                        <div class="btn-container">
+                            <button class="btn-top-padding btn btn-color-3" onclick="window.open('./assets/Mohamad Elzaatari portfolio.pdf')">Read More</button>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/gameLogo.jpg" alt="game" class="icon">
+                        <h3>Keepy Uppy Karl</h3>
+                        <p>Endless Player <br> Unreal Engine</p>
+                        <div class="btn-container">
+                            <button class="btn-top-padding btn btn-color-3" onclick="window.open('./assets/Mohamad Elzaatari portfolio.pdf')">Read More</button>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/gameLogo.jpg" alt="game" class="icon">
+                        <h3>Farm Game</h3>
+                        <p>Replication & Multiplayer <br>Unreal Engine</p>
+                        <div class="btn-container">
+                            <button class="btn-top-padding btn btn-color-3" onclick="window.open('./assets/Mohamad Elzaatari portfolio.pdf')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Some of the games I have worked on both during my time in university and afterwards. These games showcase my ability not to only work with a team but also alone in order to get certain features done. <br></p>
+                    <br> <br> <br>
+                    <h3 class="center-txt">My Games Portfolio:</h3>
+                    <br>
+                    <div class="btn-container">
+                        <button style="width: auto;" class="btn-top-padding btn btn-color-3" onclick="window.open('./assets/Mohamad Elzaatari portfolio.pdf')">Download Portfolio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Next section arrow" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Feel Free To</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+            <img class="circular-pic" style="cursor: pointer;" src="./assets/email.png" alt="Socials pic" onclick="window.open('mailto:mzaatari@umich.edu')">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Please, Email Me At </p>
+                <h1 class="title">mzaatari@umich.edu</h1>
+                <div class="btn-container">
+                    <button style="width: 30rem;" class="btn btn-color-3" onclick="window.open('mailto:mzaatari@umich.edu')">Email Me Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links footers">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="center-txt">Copyright &#169; 2026 Mohamad Elzaatari. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
